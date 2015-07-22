@@ -135,6 +135,7 @@
     <Folder Include="HumanResources\XMLSchemaCollections\" />
     <Folder Include="Production\XMLSchemaCollections\" />
     <Folder Include="Sales\XMLSchemaCollections\" />
+    <Folder Include="Deploy" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Production\Tables\ScrapReason.sql" />
@@ -270,5 +271,8 @@
     <Build Include="Production\XMLSchemaCollections\ProductDescriptionSchemaCollection.sql" />
     <Build Include="Sales\XMLSchemaCollections\StoreSurveySchemaCollection.sql" />
     <Build Include="ExtendedProperties.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Deploy\Script.StaticData.sql" />
   </ItemGroup>
 </Project>
