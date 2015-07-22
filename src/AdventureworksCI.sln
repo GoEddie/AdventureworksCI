@@ -5,6 +5,15 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AdventureworksCI", "AdventureworksCI\AdventureworksCI\AdventureworksCI.sqlproj", "{4F60A403-E200-45CE-9DB7-558EA1FB486F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{BF1A75BF-CBA8-4394-A0DB-C88901E302EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "References", "References", "{72231270-524C-4D1C-832D-B9AFA0FE818A}"
+	ProjectSection(SolutionItems) = preProject
+		Test\References\tSQLt.dacpac = Test\References\tSQLt.dacpac
+	EndProjectSection
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AdventureworksCI.UnitTests", "Test\AdventureworksCI.UnitTests\AdventureworksCI.UnitTests.sqlproj", "{E90A7FE8-3EF7-4CC9-92B0-BE6D447D33F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,8 +26,18 @@ Global
 		{4F60A403-E200-45CE-9DB7-558EA1FB486F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F60A403-E200-45CE-9DB7-558EA1FB486F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4F60A403-E200-45CE-9DB7-558EA1FB486F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E90A7FE8-3EF7-4CC9-92B0-BE6D447D33F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E90A7FE8-3EF7-4CC9-92B0-BE6D447D33F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E90A7FE8-3EF7-4CC9-92B0-BE6D447D33F4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E90A7FE8-3EF7-4CC9-92B0-BE6D447D33F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E90A7FE8-3EF7-4CC9-92B0-BE6D447D33F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E90A7FE8-3EF7-4CC9-92B0-BE6D447D33F4}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{72231270-524C-4D1C-832D-B9AFA0FE818A} = {BF1A75BF-CBA8-4394-A0DB-C88901E302EE}
+		{E90A7FE8-3EF7-4CC9-92B0-BE6D447D33F4} = {BF1A75BF-CBA8-4394-A0DB-C88901E302EE}
 	EndGlobalSection
 EndGlobal
